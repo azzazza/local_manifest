@@ -2,13 +2,13 @@
 <manifest>
 
     <!-- device tree -->	
-    <project path="device/xiaomi/rolex" name="Redmi4A/android_device_xiaomi_rolex" remote="github" revision="cm-14.1" />
+    <project path="device/micromax/q415" name="azzazza/android_device_micromax_q415" remote="github" revision="cm-14.1" />
     <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="cm-14.1" />
     
     <!-- kernel -->
-    <project path="kernel/xiaomi/msm8937" name="Redmi4A/android_kernel_xiaomi_msm8937" remote="github" revision="cm-14.1" />
+    <project path="kernel/micromax/q415" name="azzazza/android_kernel_micromax_q415" remote="github" revision="cm-14.1" />
     
     <!-- vendor -->
-    <project path="vendor/xiaomi/rolex" name="Redmi4A/android_vendor_xiaomi_rolex" remote="github" revision="cm-14.1" />
+    <project path="vendor/micromax/q415" name="azzazza/proprietary_vendor_micromax_q415" remote="github" revision="cm-14.1" />
 
 </manifest>
