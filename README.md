@@ -1,15 +1,15 @@
-LineageOS For Xiaomi Redmi 4A
+LineageOS For Micromax Q415
 =============================
 
 Initializing:
 
 First, create a folder to hold the source code: 
 
-	mkdir ~/lineage
+	mkdir ~/lineage14
 
 Next, naviate into that new directory via the terminal:
 
-	cd ~/lineage
+	cd ~/lineage14
 
 To initialize your local repository use this command:
 
@@ -17,7 +17,7 @@ To initialize your local repository use this command:
 
 Also add the local manifests:
 
-	git clone https://github.com/Redmi4A/local_manifest -b cm-14.1 .repo/local_manifests
+	git clone https://github.com/azzazza/local_manifest -b LoS-14.1 .repo/local_manifests
 
 Then sync up with this command:
 
@@ -32,14 +32,10 @@ _Building from source_
 
 First:
 
-	cd ~/lineage
+	cd ~/lineage14
 
 Second:
 
-	$ echo "export USE_CCACHE=1" >> ~/.bashrc
-	$ prebuilts/misc/linux-x86/ccache/ccache -M 50G
-
-Third:
-
 	. build/envsetup.sh
-	brunch rolex
+	brunch Q415
+	
