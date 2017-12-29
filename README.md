@@ -1,3 +1,5 @@
+do not use, in the process of revision
+
 LineageOS For Micromax Q415
 =============================
 
