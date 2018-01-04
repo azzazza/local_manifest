@@ -1,5 +1,3 @@
-do not use, in the process of revision
-
 LineageOS For Micromax Q415
 =============================
 
@@ -74,6 +72,5 @@ First:
 
 Second:
 
-	. build/envsetup.sh
-	brunch Q415
+	. build/envsetup.sh && export WITH_SU=true && brunch Q415
 	
