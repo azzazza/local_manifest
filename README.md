@@ -27,6 +27,12 @@ Then sync up with this command:
 	
 You can make the 4 higher depending on how fast your internet connection is. 
 
+Also add the prebuilt:
+
+	git clone https://github.com/azzazza/prebuilt -b master vendor/cm
+
+	git clone https://github.com/azzazza/opt -b master frameworks
+
 -------------
  
 _Building from source_
