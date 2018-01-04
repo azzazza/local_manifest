@@ -23,7 +23,7 @@ Also add the local manifests:
 
 Then sync up with this command:
 
-	repo sync --force-sync
+	repo sync -j4 -f --no-clone-bundle --no-tags --force-sync
 	
 You can make the 4 higher depending on how fast your internet connection is. 
 
