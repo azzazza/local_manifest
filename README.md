@@ -45,9 +45,9 @@ mkdir ~/lineage14
 
 cd ~/lineage14
 
-git clone https://github.com/azzazza/local_manifest -b LoS-14.1 .repo/local_manifests
-
 repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+
+git clone https://github.com/azzazza/local_manifest -b LoS-14.1 .repo/local_manifests
 
 repo sync -j4 -f --no-clone-bundle --no-tags --force-sync
 
