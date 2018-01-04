@@ -1,25 +1,23 @@
-do not use, in the process of revision
-
-LineageOS For Micromax Q415
+Resurrection Remix OS For Micromax Q415
 =============================
 
 Initializing:
 
 First, create a folder to hold the source code: 
 
-	mkdir ~/lineage14
+	mkdir ~/RR
 
 Next, naviate into that new directory via the terminal:
 
-	cd ~/lineage14
+	cd ~/RR
 
 To initialize your local repository use this command:
 
-	repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+	repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
 
 Also add the local manifests:
 
-	git clone https://github.com/azzazza/local_manifest -b LoS-14.1 .repo/local_manifests
+	git clone https://github.com/azzazza/local_manifest -b RR .repo/local_manifests
 
 Then sync up with this command:
 
@@ -43,13 +41,13 @@ or script
 
 #!/bin/bash
 
-mkdir ~/lineage14
+mkdir ~/RR
 
-cd ~/lineage14
+cd ~/RR
 
-git clone https://github.com/azzazza/local_manifest -b LoS-14.1 .repo/local_manifests
+git clone https://github.com/azzazza/local_manifest -b RR .repo/local_manifests
 
-repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
 
 repo sync -j4 -f --no-clone-bundle --no-tags --force-sync
 
@@ -70,10 +68,9 @@ _Building from source_
 
 First:
 
-	cd ~/lineage14
+	cd ~/RR
 
 Second:
 
-	. build/envsetup.sh
-	brunch Q415
+	. build/envsetup.sh && export WITH_SU=true && brunch Q415
 	
