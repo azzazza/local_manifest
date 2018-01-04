@@ -29,9 +29,28 @@ You can make the 4 higher depending on how fast your internet connection is.
 
 Also add the prebuilt:
 
-	git clone https://github.com/azzazza/prebuilt -b master vendor/cm
+	mkdir prepare
+	
+	git clone https://github.com/azzazza/prebuilt -b master prepare/vendor/cm
+	
+	git clone https://github.com/azzazza/opt -b master prepare/frameworks
+	
+	cp -R prepare/vendor/cm/prebuilt/ vendor/cm/
+	
+	cp -R prepare/frameworks/opt/ frameworks/
+	
+or script
 
-	git clone https://github.com/azzazza/opt -b master frameworks
+#!/bin/bash
+mkdir ~/lineage14
+cd ~/lineage14
+git clone https://github.com/azzazza/local_manifest -b LoS-14.1 .repo/local_manifests
+repo sync -j4 -f --no-clone-bundle --no-tags --force-sync
+mkdir prepare
+git clone https://github.com/azzazza/prebuilt -b master prepare/vendor/cm
+git clone https://github.com/azzazza/opt -b master prepare/frameworks
+cp -R prepare/vendor/cm/prebuilt/ vendor/cm/
+cp -R prepare/frameworks/opt/ frameworks/
 
 -------------
  
