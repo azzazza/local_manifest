@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="cm-14.1" />
-    <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" revision="cm-14.1" remote="github" />
-    <project path="external/mm-dash" name="LineageOS/android_external_mm-dash" revision="cm-14.0" remote="github" />
     <!-- device tree -->
-    <project path="device/micromax/Q415" name="azzazza/android_device_micromax_q415" revision="cm-14.1" remote="github" />
+	<project path="device/micromax/Q415" name="azzazza/aospe_device_micromax_Q415" revision="master" remote="github" />
     <!-- kernel -->
     <project path="kernel/micromax/q415" name="azzazza/android_kernel_micromax_q415" revision="LOS-14.1" remote="github" />
     <!-- vendor -->
