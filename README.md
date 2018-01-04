@@ -45,9 +45,9 @@ mkdir ~/RR
 
 cd ~/RR
 
-git clone https://github.com/azzazza/local_manifest -b RR .repo/local_manifests
-
 repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
+
+git clone https://github.com/azzazza/local_manifest -b RR .repo/local_manifests
 
 repo sync -j4 -f --no-clone-bundle --no-tags --force-sync
 
